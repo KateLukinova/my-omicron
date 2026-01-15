@@ -1,0 +1,74 @@
+@use "common" as *;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  font-size: .521vw; // 100vw / 1920px * 10
+  width: 100vw;
+  min-width: 100vw;
+  height: max-content;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  &.smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  @include desktop {
+    font-size: .595vw; // 100vw / 1680px * 10
+  }
+
+  @include desktop-sm {
+    font-size: .732vw; // 100vw / 1366px * 10
+  }
+
+  @include tablet {
+    font-size: 1.042vw;  // 100vw / 960px * 10
+  }
+
+  @include mobile {
+    font-size: 2.667vw; // 100vw / 375px * 10
+  }
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.375rem;
+    height: 0;
+  }
+
+
+  /* Дорожка скроллбара (фон) */
+  ::-webkit-scrollbar-track {
+    background: $surface-invert;  /* Цвет фона */
+    border-radius: 4px;   /* Закругление */
+  }
+
+  /* Ползунок скроллбара */
+  ::-webkit-scrollbar-thumb {
+    background: $bg-brand;     /* Цвет ползунка */
+    border-radius: 4px;   /* Закругление */
+  }
+
+  /* Ползунок при наведении */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $bg-brand;    /* Цвет при наведении */
+  }
+}
+
+[id] {
+  scroll-margin-top: 10rem;
+}
+
+body {
+  font-family: $font-access;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 400;
+  position: relative;
+  overflow-x: hidden;
+  background: $bg-primary;
+  color: $text-primary;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+

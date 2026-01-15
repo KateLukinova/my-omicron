@@ -1,0 +1,14 @@
+{
+  "projectToken": "<your-project-token>",
+  "buildScriptName": "build-storybook",
+  "storybookBuildDir": "storybook-static",
+  "exitZeroOnChanges": true,
+  "exitOnceUploaded": true,
+  "ignoreLastBuildOnBranch": "main",
+  "skip": "dependabot/**",
+  "externals": [
+    "public/**"
+  ],
+  "debug": false,
+  "diagnostics": false
+}

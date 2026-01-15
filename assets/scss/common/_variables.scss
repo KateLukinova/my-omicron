@@ -1,0 +1,203 @@
+/* Collection name: Primitives */
+/* Mode: Standard & Halloween */
+
+// Brand Colors
+$green-50: #f3fff4;
+$green-100: #ceffd3;
+$green-200: #afffb7;
+$green-300: #7fff8c;
+$green-400: #4df75e;
+$green-500: #1dcf46;
+$green-600: #0ea135;
+$green-700: #05883b;
+$green-800: #047142;
+$green-900: #085836;
+$green-950: #083d26;
+
+// Grey Colors
+$white: #ffffff;
+$grey-100: #ececec;
+$grey-200: #c9c9c8;
+$grey-300: #a9a9a9;
+$grey-400: #8e8f8d;
+$grey-500: #787878;
+$grey-600: #676767;
+$grey-700: #494949;
+$grey-800: #363636;
+$grey-900: #262625;
+$grey-950: #141513;
+
+// Red Colors
+$red-700: #de4c45;
+$button-primary-bg-default: #4DF75E;
+
+
+/* Collection name: Tokens */
+/* Mode: Dark */
+// Text Colors
+$text-primary-dark: $white;
+$text-secondary-dark: $grey-600;
+$text-brand-dark: $green-400;
+$text-invert-dark: $grey-950;
+$text-hover-dark: $green-500;
+$text-pressed-dark: $green-600;
+$text-contrast-dark: $red-700;
+
+// Background Colors
+$bg-primary-dark: $grey-950;
+$bg-secondary-dark: $white;
+$surface-invert-dark: $grey-700;
+$bg-brand-dark: $green-400;
+
+// Border Colors
+$border-primary-dark: $grey-700;
+$border-secondary-dark: $grey-200;
+$border-contrast-dark: $red-700;
+
+// Buttons color
+$button-primary-bg-hover-dark: $green-500;
+$button-primary-bg-pressed-dark: $green-600;
+$button-primary-bg-disabled-dark: $green-950;
+$button-primary-text-disabled-dark: $green-500;
+$button-secondary-bg-hover-dark: $grey-800;
+$button-secondary-bg-pressed-dark: $grey-700;
+$button-secondary-bg-disabled-dark: $grey-600;
+$button-secondary-text-disabled-dark: $grey-700;
+
+
+
+  /* Collection name: Tokens */
+/* Mode: Light */
+// Text Colors
+$text-primary-light: $grey-950;
+$text-secondary-light: $grey-900;
+$text-brand-light: $green-500;
+$text-invert-light: $grey-950;
+$text-hover-light: $green-600;
+$text-pressed-light: $green-800;
+$text-contrast-light: $red-700;
+
+// Background Colors
+$bg-primary-light: $grey-100;
+$bg-secondary-light: $grey-950;
+$surface-invert-light: $grey-200;
+$bg-brand-light: $green-500;
+
+// Border Colors
+$border-primary-light: $grey-200;
+$border-secondary-light: $grey-700;
+$border-contrast-light: $red-700;
+
+// Buttons color
+$button-primary-bg-hover-light: $green-300;
+$button-primary-bg-pressed-light : $green-200;
+$button-primary-bg-disabled-light: $grey-200;
+$button-primary-text-disabled-light: $grey-300;
+$button-secondary-bg-hover-light: $grey-100;
+$button-secondary-bg-pressed-light: $grey-200;
+$button-secondary-bg-disabled-light: $grey-100;
+$button-secondary-text-disabled-light: $grey-300;
+
+
+/* Collection name: Typography */
+
+// Font Families
+$font-access: 'Roboto Mono', monospace;
+$font-body: 'Raleway', sans-serif;
+
+/* Breakpoints */
+$mobile: 375px;
+$tablet: 960px;
+$desktop-sm: 1366px;
+$desktop: 1680px;
+
+/* Theme System - CSS Custom Properties */
+// Default theme (light)
+:root {
+  // Text Colors
+  --text-primary: #{$text-primary-light};
+  --text-secondary: #{$text-secondary-light};
+  --text-brand: #{$text-brand-light};
+  --text-invert: #{$text-invert-light};
+  --text-hover: #{$text-hover-light};
+  --text-pressed: #{$text-pressed-light};
+  --text-contrast: #{$text-contrast-light};
+
+  // Background Colors
+  --bg-primary: #{$bg-primary-light};
+  --bg-secondary: #{$bg-secondary-light};
+  --surface-invert: #{$surface-invert-light};
+  --bg-brand: #{$bg-brand-light};
+
+  // Border Colors
+  --border-primary: #{$border-primary-light};
+  --border-secondary: #{$border-secondary-light};
+  --border-contrast: #{$border-contrast-light};
+  --border-invert: #{$text-invert-light};
+
+  // Buttons color
+  --button-primary-bg-hover: #{$button-primary-bg-hover-light};
+  --button-primary-bg-pressed: #{$button-primary-bg-pressed-light};
+  --button-primary-bg-disabled: #{$button-primary-bg-disabled-light};
+  --button-primary-text-disabled: #{$button-primary-text-disabled-light};
+  --button-secondary-bg-hover: #{$button-secondary-bg-hover-light};
+  --button-secondary-bg-pressed: #{$button-secondary-bg-pressed-light};
+  --button-secondary-bg-disabled: #{$button-secondary-bg-disabled-light};
+  --button-secondary-text-disabled: #{$button-secondary-text-disabled-light};
+
+}
+
+// Dark theme
+[data-theme="dark"] {
+  // Text Colors
+  --text-primary: #{$text-primary-dark};
+  --text-secondary: #{$text-secondary-dark};
+  --text-brand: #{$text-brand-dark};
+  --text-invert: #{$text-invert-dark};
+  --text-hover: #{$text-hover-dark};
+  --text-pressed: #{$text-pressed-dark};
+  --text-contrast: #{$text-contrast-dark};
+
+  // Background Colors
+  --bg-primary: #{$bg-primary-dark};
+  --bg-secondary: #{$bg-secondary-dark};
+  --surface-invert: #{$surface-invert-dark};
+  --bg-brand: #{$bg-brand-dark};
+
+  // Border Colors
+  --border-primary: #{$border-primary-dark};
+  --border-secondary: #{$border-secondary-dark};
+  --border-contrast: #{$border-contrast-dark};
+  --border-invert: #{$text-invert-dark};
+
+  // Buttons color
+  --button-primary-bg-hover: #{$button-primary-bg-hover-dark};
+  --button-primary-bg-pressed: #{$button-primary-bg-pressed-dark};
+  --button-primary-bg-disabled: #{$button-primary-bg-disabled-dark};
+  --button-primary-text-disabled: #{$button-primary-text-disabled-dark};
+  --button-secondary-bg-hover: #{$button-secondary-bg-hover-dark};
+  --button-secondary-bg-pressed: #{$button-secondary-bg-pressed-dark};
+  --button-secondary-bg-disabled: #{$button-secondary-bg-disabled-dark};
+  --button-secondary-text-disabled: #{$button-secondary-text-disabled-dark};
+}
+
+/* Simplified SCSS Variables for Easy Usage */
+// Text Colors
+$text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+$text-brand: var(--text-brand);
+$text-invert: var(--text-invert);
+$text-hover: var(--text-hover);
+$text-pressed: var(--text-pressed);
+$text-contrast: var(--text-contrast);
+
+// Background Colors
+$bg-primary: var(--bg-primary);
+$bg-secondary: var(--bg-secondary);
+$surface-invert: var(--surface-invert);
+$bg-brand: var(--bg-brand);
+
+// Border Colors
+$border-primary: var(--border-primary);
+$border-secondary: var(--border-secondary);
+$border-contrast: var(--border-contrast);
