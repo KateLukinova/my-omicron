@@ -1,5 +1,6 @@
 <template>
   <button
+      style="border-radius: 8px;"
       :class="buttonClasses"
       :disabled="disabled"
       @click="$emit('click', $event)"

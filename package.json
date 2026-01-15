@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=<your-project-token>",
+    "chromatic": "npx chromatic --project-token=chpt_dc8d2c76e22ed54",
     "test:visual": "npm run build-storybook && npm run chromatic"
   },
   "dependencies": {
