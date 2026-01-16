@@ -68,8 +68,8 @@ const buttonClasses = computed(() => {
 
   const typeClasses = {
     primary: [
-      'bg-button-primary-bg-default',
-      'text-grey-950',
+      'bg-[#000000]',
+      'text-white',
       'hover:bg-button-primary-bg-hover',
       'focus:bg-button-primary-bg-pressed',
       'disabled:bg-button-primary-bg-disabled disabled:text-button-primary-text-disabled',
