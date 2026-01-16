@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-start bg-primary overflow-hidden max-w-[59.3rem]">
+  <div class="flex flex-col items-start overflow-hidden max-w-[59.3rem]">
     <div v-if="imageSrc" class="w-full">
       <img :src="imageSrc" class="w-full h-full object-cover aspect-[3/2]" :alt="imageAlt">
     </div>

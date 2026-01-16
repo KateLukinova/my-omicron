@@ -96,27 +96,6 @@ export const Minimal: Story = {
     }
 }
 
-// Карточка товара
-export const ProductCard: Story = {
-    args: {
-        title: 'iPhone 15 Pro',
-        description: 'Новейший смартфон Apple с продвинутой камерой и процессором A17 Pro',
-        imageSrc: '/images/card.png',
-        imageAlt: 'iPhone 15 Pro',
-        buttons: [
-            { text: 'Купить', type: 'primary', onClick: () => alert('Товар добавлен в корзину!') },
-            { text: 'В избранное', type: 'secondary', onClick: () => alert('Добавлено в избранное!') }
-        ]
-    },
-    parameters: {
-        docs: {
-            description: {
-                story: 'Пример использования карточки для отображения товара в интернет-магазине'
-            }
-        }
-    }
-}
-
 // Демонстрация нескольких карточек в сетке
 export const CardGrid: Story = {
     render: () => ({
