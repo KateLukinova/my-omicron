@@ -1,6 +1,5 @@
 <template>
   <button
-      style="border-radius: 8px;"
       :class="buttonClasses"
       :disabled="disabled"
       @click="$emit('click', $event)"
@@ -69,7 +68,7 @@ const buttonClasses = computed(() => {
 
   const typeClasses = {
     primary: [
-      'bg-button-primary-bg-default',
+      'bg-[#333]',
       'text-grey-950',
       'hover:bg-button-primary-bg-hover',
       'focus:bg-button-primary-bg-pressed',
